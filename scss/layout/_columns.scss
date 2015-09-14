@@ -1,0 +1,15 @@
+.tips {
+  @extend %columns;
+  float: left; }
+
+.resorts {
+  @extend %columns;
+  float: right; }
+
+.tips,
+.resorts {
+	@media #{$brk-narrow} {
+		float: none;
+    	width: 100%;
+	}
+}
